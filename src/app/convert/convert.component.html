@@ -1,0 +1,18 @@
+<h2>Converter</h2>
+
+<div>
+  <select id="currencySelection" [(ngModel)]="firstSelected" (ngModelChange)="onSelectFirst(firstSelected)" required>
+    <option *ngFor="let currency of currencies" [ngValue]="currency" >{{currency.cc}}</option>
+  </select>
+  <input [(ngModel)]="firstAmount" (change)="onChangedFirst(firstAmount)">
+</div>
+
+<br>
+
+<div>
+  <select id="currencySelection" [(ngModel)]="secondSelected" (ngModelChange)="onSelectSecond(secondSelected)" required>
+    <option *ngFor="let currency of currencies" [ngValue]="currency" >{{currency.cc}}</option>
+  </select>
+  <input [(ngModel)]="secondAmount" (change)="onChangedSecond(secondAmount)">
+</div>
+

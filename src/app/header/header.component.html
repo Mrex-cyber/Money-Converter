@@ -1,0 +1,8 @@
+<h2>Popular currencies</h2>
+<ul>
+  <div *ngFor="let currency of currencies" class="currency" class="currency">
+    {{currency.cc}}
+    <br>
+    ({{currency.rate}})
+  </div>
+</ul>
